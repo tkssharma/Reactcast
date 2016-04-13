@@ -1,0 +1,23 @@
+{
+  "name": "learn-webpack",
+  "version": "0.0.1",
+  "description": "An example repository for webpack newbies",
+  "main": "src/index.js",
+  "scripts": {
+    "styles": "webpack --config webpack.styles.config.js",
+    "extract-text": "webpack --config webpack.extracttext.config.js",
+    "autoprefixer": "webpack --config webpack.autoprefixer.config.js"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer-loader": "^3.1.0",
+    "css-loader": "^0.21.0",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.2"
+  }
+}

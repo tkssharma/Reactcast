@@ -1,0 +1,21 @@
+{
+  "name": "learn-webpack",
+  "version": "0.0.1",
+  "description": "An example repository for webpack newbies",
+  "main": "src/a.js",
+  "scripts": {
+    "dist": "webpack"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.21.0",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.2"
+  }
+}
