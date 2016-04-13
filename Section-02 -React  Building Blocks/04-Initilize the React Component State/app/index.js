@@ -20,7 +20,6 @@ var ReactDOM = require('react-dom')
       <div>
         <div>
           <h1 class="container well">hello react</h1>
-
              <input type="checkbox"
               defaultChecked={this.state.checked} onChange={this.handleCheck}/>
                         <p>This box is {msg}.</p>
