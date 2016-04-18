@@ -1,23 +1,22 @@
+// In webpack.config.js
+var HtmlWebpackPlugin = require('html-webpack-plugin')
+var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
+  template: __dirname + '/app/index.html',
+  filename: 'index.html',
+  inject: 'body'
+});
 module.exports = {
   entry: [
-    './src/index.js'
+    './app/index.js'
   ],
   output: {
-    path: __dirname,
-    publicPath: '/',
-    filename: 'bundle.js'
+    path: __dirname + '/dist',
+    filename: "index_bundle.js"
   },
   module: {
-    loaders: [{
-      exclude: /node_modules/,
-      loader: 'babel'
-    }]
+    loaders: [
+      {test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"}
+    ]
   },
-  resolve: {
-    extensions: ['.js' ]
-  },
-  devServer: {
-    historyApiFallback: true,
-    contentBase: './'
-  }
+  plugins: [HTMLWebpackPluginConfig]
 };
