@@ -1,0 +1,27 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com"
+  },
+    "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --content-base src --inline --hot"
+  },
+  "author": "Tyler McGinnis",
+  "dependencies": {
+    "axios": "^0.4.2",
+    "events": "^1.0.2",
+    "flux": "^2.0.1",
+        "html-webpack-plugin": "^2.15.0",
+    "react": "^0.12.1"
+  },
+  "devDependencies": {
+    "jsx-loader": "^0.12.2",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
