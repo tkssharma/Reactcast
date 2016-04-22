@@ -7,6 +7,9 @@
     "type": "git",
     "url": ""
   },
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
   "keywords": [
     "react",
     "todo",
@@ -24,7 +27,10 @@
     "react": "^0.13.3",
     "react-redux": "^2.1.2",
     "redux": "^3.0.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
     "todomvc-app-css": "^2.0.1",
-    "webpack": "^1.12.2"
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
   }
 }

@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Simple starter package for Redux with React and Babel support",
   "main": "index.js",
-  "repository": "",
+  "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
   },
   "author": "",
   "license": "ISC",
@@ -18,10 +18,15 @@
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
+    "axios": "^0.8.1",
     "babel-preset-stage-1": "^6.1.18",
+    "lodash": "^3.10.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
+    "react-google-maps": "^4.7.1",
     "react-redux": "^4.0.0",
-    "redux": "^3.0.4"
+    "react-sparklines": "^1.4.2",
+    "redux": "^3.0.4",
+    "redux-promise": "^0.5.0"
   }
 }

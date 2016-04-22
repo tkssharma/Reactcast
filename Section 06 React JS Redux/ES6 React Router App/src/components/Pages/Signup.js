@@ -48,19 +48,19 @@ class SignupForm extends Component{
             type="text"
             className="form-control"
             placeholder="Name"
-            ref={(ref) => this.nameRef(ref)}
+            ref="name"
           />
           <input
             type="text"
             className="form-control"
             placeholder="Email"
-            ref={(ref) => this.emailRef(ref)}
+            ref="email"
           />
           <input
             type="password"
             className="form-control"
             placeholder="Password"
-            ref={(ref) => this.passRef(ref)}
+            ref="password"
           />
           <input
             type="submit"

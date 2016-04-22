@@ -7,9 +7,9 @@ import BookDetail from '../containers/book-detail';
 export default class App extends Component {
   render() {
     return (
-      <div>
-        <BookList />
-        <BookDetail />
+      <div className="row">
+        <BookList  className="col-md-8" />
+        <BookDetail  className="col-md-4" />
       </div>
     );
   }
