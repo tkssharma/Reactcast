@@ -1,0 +1,55 @@
+<head>
+   <title>Jasmine Demo for showing Jasmine</title>
+<script type="text/javascript"
+src="src/SimpleDemo.js">
+</script>
+<script>
+ 	 var demo = new Demo()
+	function updateDisplay() {
+			    $("#display").text(demo.phraseToDisplay);
+			
+			
+	}
+	
+	function updatePhrase() {
+	$("#favouritePhrase").text(demo.remeberedPhrase);
+	}
+
+	function press(value){
+			demo.displayThisPhrase(value);
+			    updateDisplay();
+	}
+
+	function Test(value){
+		demo.rememberThePhrase(value);
+ 		updatePhrase();
+}
+</script>
+</head>
+
+<body>
+<h1> Simple Demo for showing Jasmine </h1>
+
+<p>This is a simple example that takes a user's text and displays it on screen when they click submit.</p>
+<p>If no text is specified it says 'Enter Text Here' but if it is left blank it prints "Hello World"</p>
+<p> You can also specify if something is your favourite phrase, but you can only do this once.</p>
+
+
+<p id="display">Your phrase will appear here.</p>
+
+<p>Your current phrase to remember is: </p>
+<p id="favouritePhrase">Your remembered phrase will appear here.</p>
+
+    <form name="myForm">
+    Please Enter some text and click the Submit Button.<br>
+      <input type=TEXT value="Enter Text Here" name="myText" id="userText">
+      <input type=BUTTON value="Submit" name="mySubmit" onClick="press(document.getElementById('userText').value)">
+    
+ 	
+<!--<form action="">-->
+
+<input type="checkbox" name="myCheck" value="Remember" id="rememberThis" onClick="Test(document.getElementById('userText').value)">Remember this phrase<br>
+</form>
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+</body>
+
