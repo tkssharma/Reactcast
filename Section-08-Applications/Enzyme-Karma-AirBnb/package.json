@@ -1,0 +1,41 @@
+{
+  "name": "enzyme-example-karma",
+  "version": "0.1.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^0.14.6",
+    "react-addons-test-utils": "^0.14.6",
+    "react-dom": "^0.14.6"
+  },
+  "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-preset-airbnb": "^1.0.1",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
+    "enzyme": "^2.0.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.19",
+    "karma-babel-preprocessor": "^6.0.1",
+    "karma-browserify": "^5.0.0",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "phantomjs-prebuilt": "^2.1.4",
+    "watchify": "^3.7.0"
+  },
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS",
+    "test:watch": "./node_modules/karma/bin/karma start --auto-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lelandrichardson/enzyme-example-karma.git"
+  },
+  "author": "Leland Richardson <leland.richardson@airbnb.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lelandrichardson/enzyme-example-karma/issues"
+  },
+  "homepage": "https://github.com/lelandrichardson/enzyme-example-karma#readme"
+}

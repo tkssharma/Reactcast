@@ -1,0 +1,48 @@
+{
+  "name": "react-jest",
+  "version": "0.0.2",
+  "description": "Test a React app using Jest.",
+  "author": {
+    "name": "David Valles",
+    "email": "davidtjvalles@gmail.com"
+  },
+  "scripts": {
+    "clean": "rm -rf ./dist ./coverage",
+    "build": "webpack --progress --colors",
+    "server": "babel-node server",
+    "test": "jest && open ./coverage/lcov-report/index.html"
+  },
+  "private": true,
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-jest": "^6.0.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "eslint": "^1.10.1",
+    "eslint-config-airbnb": "^1.0.0",
+    "eslint-plugin-react": "^3.10.0",
+    "jest-cli": "^0.8.0",
+    "react-addons-test-utils": "^0.14.3",
+    "webpack": "^1.12.9"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/react-dom",
+      "<rootDir>/node_modules/react-addons-test-utils",
+      "<rootDir>/node_modules/fbjs"
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ],
+    "testDirectoryName": "tests/components",
+    "collectCoverage": true
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3"
+  }
+}
